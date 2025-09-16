@@ -1,0 +1,32 @@
+Privacy Policy for Chat Alert Notification Chrome Extension
+Last Updated: September 15, 2025
+
+1. Overview
+Chat Alert Notification is a Chrome extension that plays a sound alert when someone joins the Service Central chat on hormel.saasit.com. This policy explains how data is collected, used, and protected.
+
+2. Information Collection
+    The extension uses Chrome’s storage API to save user preferences within the browser (namely notification sound selection and whether the extension is enabled)
+    The extension tracks which browser tab and window contains the Service Central chat, storing this locally to be able to focus the tab on alert.
+    No personal, sensitive, or identifiable information is read, saved, or shared.
+    The extension only runs scripts on pages within the hormel.saasit.com domain and cannot access data on other websites.
+
+3. Use of Information
+    Stored data is used strictly for the functionality of the extension.
+    Data is stored locally in the user’s browser.
+    The extension does not analyze, share, or sell any information.
+    
+4. Data Disclosure and Sharing
+    No information is disclosed to or shared with third parties.
+    Extension data never leaves the user’s local device.
+    
+6. User Controls
+    Users may change their preferences at any time via the extension’s popup menu.
+    Users may delete their data by removing the chrome extension from their browser.
+
+7. Changes to This Policy
+    Changes to this privacy policy will be posted on the Chrome Web Store listing and updated within the extension.
+    Continued use of the extension implies acceptance of any changes.
+
+8. Contact
+    For questions or concerns about this policy, please use the Chat Alert Notification developer via the Chrome Web Store to reach out.
+    
