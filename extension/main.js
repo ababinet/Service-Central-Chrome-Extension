@@ -6,6 +6,11 @@
 // variables used to identify the button element for the chat
 // use inspect element to verify these have not changed for initial troubleshooting
 
+if (!chrome.runtime) {
+    console.error("chrome.runtime is undefined!");
+}
+
+
 const chatOff = "chat-icon-off";
 const chatOn = "chat-icon-on";
 const chatAlert = "chat-icon-alert";

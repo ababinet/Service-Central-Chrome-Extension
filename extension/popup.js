@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const option = document.createElement("option");
                 option.value = sound.file;
                 option.textContent = sound.name;
-                notificationSelect.appendChile(option);
+                notificationSelect.appendChild(option);
             });
 
             // load saved selection after populating options
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         })
         .catch(err => {
-            console.error("Error fetching or parsing sounds.json". err);
+            console.error("Error fetching or parsing sounds.json", err);
         });
 
     // load toggle saved state
@@ -66,10 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // play the selected notification sound
         const selectedSound = event.target.value;
-        currentAudio = new Audio(chrom.runtime.getURL("sounds" + selectedSound));
-        currentAudio.warn("Failed to play notification sound preview", err);
-    });
+        currentAudio = new Audio(chrome.runtime.getURL("sounds/" + selectedSound));
+        currentAudio.play().catch(err => console.warn("Failed to play notification sound preview", err));
 
-    outputDevice.addEventListener("change", saveSettings);
+    });
 })
 

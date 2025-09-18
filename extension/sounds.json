@@ -1,0 +1,7 @@
+[
+    { "name": "Chime", "file": "new-chat2.mp3" },
+    { "name": "Skipping Stones", "file": "notification.mp3" },
+    { "name": "Droplet", "file": "droplet.mp3" },
+    { "name": "Doorbell", "file": "doorbell.mp3" },
+    { "name": "Ping", "file": "ping.mp3" }
+]
