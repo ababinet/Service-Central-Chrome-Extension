@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Service Central Chat Alert",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Plays a sound alert when someone joins the Service Central chat and focuses the chat tab",
     "icons": {
         "48": "icons/serviceCentral-48.png"
