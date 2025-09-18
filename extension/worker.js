@@ -3,10 +3,24 @@
  */
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+    if (message.action === "storeChatTabID") {
+        if (sender.tab && sender.tab.id) {
+            chrome.storage.local.set({ chatTabID: sender.tab.id }, () => {
+                sendResponse({ status: "stored" });
+            });
+            return true;
+        } else {
+            console.warn("No sender tab info to store chatTabID");
+            sendResponse({ status: "noTab" });
+        }
+        return;
+    }
+
     if (message.action === "focusTab") {
         // retrieve the ID of the tab with the chat open
         chrome.storage.local.get("chatTabID", (result) => {
             const tabID = result.chatTabID;
+            console.log(tabID);
             if (!tabID) {
                 sendResponse({ status: "noTabID" });
                 return;
@@ -37,3 +51,4 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         return true;
     }
 });
+
